@@ -4,6 +4,10 @@ files:
   - source: /
     destination: /home/ec2-user/simple-web-app
 hooks:
+  BeforeInstall:
+    - location: scripts/make_directory.sh
+      timeout: 300
+      runas: ec2-user
   AfterInstall:
     - location: scripts/install_dependencies.sh
       timeout: 300
