@@ -3,7 +3,7 @@ os: linux
 
 files:
   - source: /
-    destination: /opt/simple-web-app
+    destination: /home/ec2-user/simple-web-app
 
 hooks:
   BeforeInstall:
