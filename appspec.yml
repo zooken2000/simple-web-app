@@ -1,3 +1,10 @@
+version: 0.0
+os: linux
+
+files:
+  - source: /
+    destination: /opt/simple-web-app
+
 hooks:
   BeforeInstall:
     - location: scripts/make_directory.sh
