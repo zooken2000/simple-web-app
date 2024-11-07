@@ -19,6 +19,5 @@ phases:
 
 artifacts:
   files:
-    - 'appspec.yml'  # アーティファクトに含める
-    - 'build/**/*'   # build ディレクトリ内のすべてのファイルを含める
+    - '**/*'         # プロジェクトのすべてのファイルとサブディレクトリを含める
   discard-paths: no  # ディレクトリ構造を保持
