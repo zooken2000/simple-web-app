@@ -7,6 +7,7 @@ app.get('/', (req, res) => {
   res.send('Hello, CI/CD World!');
 });
 
-app.listen(port, () => {
+// '0.0.0.0'でIPv4アドレスでリッスンするように変更
+app.listen(port, '0.0.0.0', () => {
   console.log(`App running on http://localhost:${port}`);
 });
