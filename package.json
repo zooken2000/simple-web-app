@@ -5,7 +5,7 @@
   "scripts": {
     "start": "node app.js",
     "test": "echo \"No tests specified\" && exit 0",
-    "build": "echo \"Building the application...\" && mkdir -p build && echo 'Build complete!' > build/output.txt"
+    "build": "echo \"Building the application...\" && mkdir -p build && cp -r app.js build/ && cp -r package.json build/ && echo 'Build complete!' > build/output.txt"
   },
   "keywords": [],
   "author": "",
